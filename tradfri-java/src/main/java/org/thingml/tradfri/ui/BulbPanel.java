@@ -5,21 +5,15 @@
  */
 package org.thingml.tradfri.ui;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Frame;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.JButton;
-import javax.swing.JColorChooser;
-import javax.swing.JDialog;
-import javax.swing.JOptionPane;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
 import org.json.JSONException;
 import org.thingml.tradfri.LightBulb;
-import org.thingml.tradfri.TradfriConstants;
 import org.thingml.tradfri.TradfriBulbListener;
+import org.thingml.tradfri.TradfriConstants;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -34,7 +28,7 @@ public class BulbPanel extends javax.swing.JPanel implements TradfriBulbListener
      */
     public BulbPanel(LightBulb bulb) {
         this.bulb = bulb;
-        bulb.addLightBulbListner(this);
+        bulb.addLightBulbListener(this);
         initComponents();
         updatePanelContent();
     }

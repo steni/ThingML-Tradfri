@@ -1,0 +1,5 @@
+nbactions.xml
+nb-configuration.xml
+*.iml
+default.properties
+.idea/*
